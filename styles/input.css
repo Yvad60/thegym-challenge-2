@@ -3,7 +3,25 @@
 @tailwind utilities;
 
 @layer components {
+  .spaced {
+    @apply px-6;
+  }
   .read-more-link-btn {
     @apply text-black bg-white w-fit px-6 py-[10px] font-bold border-black border hover:bg-black hover:text-white;
+  }
+  .article-card__contaniner {
+    @apply my-10 px-6;
+  }
+  .article-card__text-container {
+    @apply mt-3 flex flex-col gap-4;
+  }
+  .article-card__title {
+    @apply font-bold text-[18px] leading-[25px];
+  }
+  .article-card__date {
+    @apply text-[#6C757D];
+  }
+  .article-card__mini-content {
+    @apply text-[16px] leading-[26px];
   }
 }
