@@ -25,7 +25,7 @@
         <i class="bi bi-search text-lg"></i>
         <i class="bi bi-list text-3xl"></i>
       </nav>
-      <nav class="flex gap-8">
+      <nav class="hidden lg:flex gap-8">
         <a href="">Services</a>
         <a href="">Industries</a>
         <a href="">Insights</a>
@@ -39,30 +39,9 @@
   <main>
     <section>
       <div class="relative h-[90vw] md:max-h-[100vh] bg-black">
-        <!-- <header class="absolute text-white flex justify-between w-full px-[100px] py-4">
-          <nav class="flex gap-8">
-            <a href="">Careers</a>
-            <a href="">Newsroom</a>
-          </nav>
-          <nav>
-            <a href="">Global</a>
-            <a href="">English</a>
-          </nav>
-          <header class="sticky top-0 z-50 bg-white shadow-sm lg:hidden">
-            <div class="px-6 py-4 flex justify-between items-center">
-              <nav>
-                <div><img class="w-[140px]" src="./assets/images/logo-soprasteria.png" alt=""></div>
-              </nav>
-              <nav class="flex gap-7 items-center">
-                <i class="bi bi-search text-lg"></i>
-                <i class="bi bi-list text-3xl"></i>
-              </nav>
-            </div>
-          </header>
-        </header> -->
-
         <div class="absolute spaced top-[10vw]">
-          <h1 class="text-[27px] lg:text-[40px] leading-[34px] font-bold max-w-[450px] lg:max-w-[950px] text-white">
+          <h1
+            class="text-[27px] lg:text-[40px] leading-[34px] lg:leading-[60px] font-bold max-w-[450px] lg:max-w-[950px] text-white">
             Sopra Steria and
             OVHcloud expand
             their
@@ -76,76 +55,85 @@
     </section>
     <section>
       <div class="mt-8">
-        <h2 class="text-[23px] mb-4">What's new</h2>
-        <div class="px-6"><img class="h-[235px] object-cover" src="./assets/images/Digital-Decade-strategy.jpg" alt="">
-        </div>
-        <div class="px-6 mt-4 flex flex-col gap-4">
-          <h4 class="font-bold text-[18px]">AI for All: Two Suggestions</h4>
-          <p class="text-[16px] leading-[26px]">
-            An article from Mohammed Sijelmassi, the CTO Sopra Steria, published by Euractiv.
-            Europe has talent, excellent research, and top education. The point is scaling up: we need more researchers,
-            AI
-            practitioners, and an open mindset.
-          </p>
-          <a class="read-more-link-btn" href="">Read more on Euractiv</a>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="article-card__contaniner">
-        <div>
-          <img
-            src="./assets/images/Sopra-Steria-earns-the-Infrastructure-Partner-Specialization-in-the-Google-Cloud-Partner-Advantage-Program516fc433e7fd6c36b458ff000034b0d9.jpg"
-            alt="cloud portrait">
-        </div>
-        <div class="article-card__text-container">
-          <h4 class="article-card__title">Sopra Steria renews its Microsoft Azure Expert Managed
-            Service
-            Provider (MSP) status</h4>
-          <p class="article-card__date">Sep 20, 2022</p>
-          <p class="article-card__mini-content">This renewal demonstrates Sopra Steria’s ability to deliver consistent,
-            repeatable high-fidelity managed
-            services on
-            Azure.</p>
+        <h2 class="text-[23px] spaced mb-4">What's new</h2>
+        <div class="spaced grid grid-cols-1 lg:grid-cols-2">
+          <div class=""><img class="h-[235px] lg:h-[400px] object-cover"
+              src="./assets/images/Digital-Decade-strategy.jpg" alt="">
+          </div>
+          <div class="px-6 mt-4 flex flex-col gap-4">
+            <h4 class="font-bold text-[18px]">AI for All: Two Suggestions</h4>
+            <p class="text-[16px] leading-[26px]">
+              An article from Mohammed Sijelmassi, the CTO Sopra Steria, published by Euractiv.
+              Europe has talent, excellent research, and top education. The point is scaling up: we need more
+              researchers,
+              AI
+              practitioners, and an open mindset.
+            </p>
+            <a class="read-more-link-btn" href="">Read more on Euractiv</a>
+          </div>
         </div>
       </div>
     </section>
-    <section>
-      <div class="article-card__contaniner">
-        <div>
-          <img src="./assets/images/avions-440.jpg" alt="">
+    <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-12 spaced">
+      <section>
+        <div class="article-card__contaniner">
+          <div>
+            <img
+              src="./assets/images/Sopra-Steria-earns-the-Infrastructure-Partner-Specialization-in-the-Google-Cloud-Partner-Advantage-Program516fc433e7fd6c36b458ff000034b0d9.jpg"
+              alt="cloud portrait">
+          </div>
+          <div class="article-card__text-container">
+            <h4 class="article-card__title">Sopra Steria renews its Microsoft Azure Expert Managed
+              Service
+              Provider (MSP) status</h4>
+            <p class="article-card__date">Sep 20, 2022</p>
+            <p class="article-card__mini-content">This renewal demonstrates Sopra Steria’s ability to deliver
+              consistent,
+              repeatable high-fidelity managed
+              services on
+              Azure.</p>
+          </div>
         </div>
-        <div class="article-card__text-container">
-          <h4 class="article-card__title">Sopra Steria selected as Airbus’ referenced supplier for its engineering and
-            functional design activities
-          </h4>
-          <p class="article-card__date">Jul 19, 2022</p>
-          <p class="article-card__mini-content">After the EMES3 listing announced in January, covering all engineering
-            activities for all Airbus Group
-            divisions, Sopra
-            Steria confirms its expertise by winning several major contracts within the design office and flight test at
-            Airbus.</p>
+      </section>
+      <section>
+        <div class="article-card__contaniner">
+          <div>
+            <img src="./assets/images/avions-440.jpg" alt="">
+          </div>
+          <div class="article-card__text-container">
+            <h4 class="article-card__title">Sopra Steria selected as Airbus’ referenced supplier for its engineering and
+              functional design activities
+            </h4>
+            <p class="article-card__date">Jul 19, 2022</p>
+            <p class="article-card__mini-content">After the EMES3 listing announced in January, covering all engineering
+              activities for all Airbus Group
+              divisions, Sopra
+              Steria confirms its expertise by winning several major contracts within the design office and flight test
+              at
+              Airbus.</p>
+          </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="article-card__contaniner">
-        <div>
-          <img src="./assets/images/i-police-627fc333e7fd6c36b458ff000034b0d9.jpg" alt="">
+      </section>
+      <section>
+        <div class="article-card__contaniner">
+          <div>
+            <img src="./assets/images/i-police-627fc333e7fd6c36b458ff000034b0d9.jpg" alt="">
+          </div>
+          <div class="article-card__text-container">
+            <h4 class="article-card__title">Sopra Steria chosen by Belgian Integrated Police to drive its digital
+              transformation through the i-Police
+              programme
+            </h4>
+            <p class="article-card__date">Jun 13, 2022</p>
+            <p class="article-card__mini-content">Sopra Steria will be responsible for managing the programme,
+              integrating
+              the solutions that make up the
+              platform,
+              migrating the data, and providing technical and functional support to users.</p>
+          </div>
         </div>
-        <div class="article-card__text-container">
-          <h4 class="article-card__title">Sopra Steria chosen by Belgian Integrated Police to drive its digital
-            transformation through the i-Police
-            programme
-          </h4>
-          <p class="article-card__date">Jun 13, 2022</p>
-          <p class="article-card__mini-content">Sopra Steria will be responsible for managing the programme, integrating
-            the solutions that make up the
-            platform,
-            migrating the data, and providing technical and functional support to users.</p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <section>
       <div class="spaced">
         <div>
@@ -159,30 +147,33 @@
 
     </section>
     <section>
-      <div class="spaced mt-12">
+      <div class="spaced mt-12 lg:max-w-[1000px] lg">
         <div><img src="" alt=""></div>
-        <div class="flex flex-col gap-4 bg-white pl-9 pr-16 py-4 mx-4 border">
+        <div class="flex flex-col gap-4 bg-white pl-9 pr-16 py-4 lg:py-8 lg:px-6 mx-4 border">
           <h4 class="text-[20px] leading-[26px] font-bold">Corporate responsibility Sopra Steria, a committed
             responsible
             enterprise</h4>
           <p>We, at Sopra Steria, firmly believe that digital is a source of opportunities and progress for all.
             Combined to a human
             dimension, it creates a virtuous circle benefiting society as a whole.</p>
-          <a class="text-white bg-primary_red px-8 py-3 mt-6 font-bold">Learn more about Corporate Resposibility</a>
+          <a class="text-white bg-primary_red px-8 py-3 mt-6 font-bold lg:max-w-fit">Learn more about Corporate Resposibility</a>
         </div>
       </div>
     </section>
     <section>
       <div class="mt-12 spaced">
         <h2 class="text-[23px]">Financial Report</h2>
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 lg:flex-row lg:gap-8">
           <div>
-            <img class="h-[235px] object-cover" src="./assets/images/URD-1550x515.jpg" alt="">
+            <img class="h-[235px] lg:[h-200px] object-cover" src="./assets/images/URD-1550x515.jpg" alt="">
           </div>
-          <h4 class="article-card__title">2021 Universal Registration Document</h4>
-          <p class="article-card__date">Mar 17, 2022</p>
-          <a class="text-[18px]" href="">Interactive link xHTML Link</a>
-          <b class="read-more-link-btn">Read more</b>
+          <div class="flex flex-col gap-4">
+            <h4 class="article-card__title">2021 Universal Registration Document</h4>
+            <p class="article-card__date">Mar 17, 2022</p>
+            <a class="text-[18px]" href="">Interactive link xHTML Link</a>
+            <b class="read-more-link-btn">Read more</b>
+          </div>
+
         </div>
       </div>
     </section>
