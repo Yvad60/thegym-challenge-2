@@ -1,1 +1,1 @@
-# thegym-challenge-2
+# The Gym challenge 2
