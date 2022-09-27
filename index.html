@@ -21,23 +21,56 @@
       <nav>
         <div><img class="w-[140px]" src="./assets/images/logo-soprasteria.png" alt=""></div>
       </nav>
-      <nav class="flex gap-7 items-center">
+      <nav class="flex gap-7 items-center md:hidden">
         <i class="bi bi-search text-lg"></i>
         <i class="bi bi-list text-3xl"></i>
+      </nav>
+      <nav class="flex gap-8">
+        <a href="">Services</a>
+        <a href="">Industries</a>
+        <a href="">Insights</a>
+        <a href="">Investors</a>
+        <a href="">About us</a>
+        <i class="bi bi-search text-lg"></i>
+
       </nav>
     </div>
   </header>
   <main>
     <section>
-      <div class="relative bg-black">
-        <div class="absolute px-6 bottom-[50px]">
-          <h1 class="text-[27px] leading-[34px] font-bold max-w-[450px] text-white">Sopra Steria and OVHcloud expand
+      <div class="relative h-[90vw] md:max-h-[100vh] bg-black">
+        <!-- <header class="absolute text-white flex justify-between w-full px-[100px] py-4">
+          <nav class="flex gap-8">
+            <a href="">Careers</a>
+            <a href="">Newsroom</a>
+          </nav>
+          <nav>
+            <a href="">Global</a>
+            <a href="">English</a>
+          </nav>
+          <header class="sticky top-0 z-50 bg-white shadow-sm lg:hidden">
+            <div class="px-6 py-4 flex justify-between items-center">
+              <nav>
+                <div><img class="w-[140px]" src="./assets/images/logo-soprasteria.png" alt=""></div>
+              </nav>
+              <nav class="flex gap-7 items-center">
+                <i class="bi bi-search text-lg"></i>
+                <i class="bi bi-list text-3xl"></i>
+              </nav>
+            </div>
+          </header>
+        </header> -->
+
+        <div class="absolute spaced top-[10vw]">
+          <h1 class="text-[27px] lg:text-[40px] leading-[34px] font-bold max-w-[450px] lg:max-w-[950px] text-white">
+            Sopra Steria and
+            OVHcloud expand
             their
             partnership to industrialise AI using open source principles</h1>
           <button class="text-white bg-primary_red px-8 py-3 mt-6 font-bold">Read the release</button>
         </div>
-        <div>
-          <img src="./assets/images/IA-cloud_4-1920.jpg" alt="Ai background">
+        <div class="h-full w-full">
+          <img class="h-full w-full object-cover" src="./assets/images/IA-cloud_4-1920.jpg" alt="Ai background">
         </div>
       </div>
     </section>
